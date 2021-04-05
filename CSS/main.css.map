@@ -2,7 +2,18 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "sass/_animals.scss",
+        "sass/_animalsform.scss",
+        "sass/_birds.scss",
+        "sass/_customers.scss",
+        "sass/_login.scss",
+        "sass/_petsprudcts.scss",
+        "sass/_petsshop.scss",
+        "sass/_salesdetail.scss",
+        "sass/_soldpets.scss",
+        "sass/_soldproducts.scss",
+        "sass/_variable.scss"
     ],
     "names": [],
     "file": "main.css"
