@@ -13,7 +13,8 @@
         "sass/_salesdetail.scss",
         "sass/_soldpets.scss",
         "sass/_soldproducts.scss",
-        "sass/_variable.scss"
+        "sass/_variable.scss",
+        "sass/_dashboard.scss"
     ],
     "names": [],
     "file": "main.css"
