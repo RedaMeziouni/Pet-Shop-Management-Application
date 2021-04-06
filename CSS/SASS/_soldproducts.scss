@@ -1,0 +1,92 @@
+$sale: #f9690e;
+$white: #fff;
+
+.s-products {
+  background-color: $sale;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  .z-logo {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.z-back {
+  color: $white;
+  border-radius: 5px;
+  border: 2px solid orange;
+  background-color: $sale;
+}
+// ADD sold products modal
+.modal-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal {
+  text-align: center;
+  width: 300px;
+  max-width: 100%;
+  background-color: $white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px 0px black;
+}
+.m-title {
+  margin-bottom: 10px;
+}
+.m-select {
+  margin: 10px 0;
+  border: none;
+  outline: none;
+}
+// table
+.z-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $white;
+  border: 5px solid orange;
+}
+
+.z-th {
+  background-color: $sale;
+  color: $white;
+  width: 300px;
+  height: 40px;
+  border: 1px solid grey;
+}
+
+.z-td {
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.footer {
+  width: 100%;
+  height: 40px;
+  padding: 0 30px;
+  background-color: black;
+  color: $white;
+  line-height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

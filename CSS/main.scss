@@ -8,4 +8,13 @@
 @import 'sass/salesdetail';
 @import 'sass/soldpets';
 @import 'sass/soldproducts';
-@import 'sass/variable';
+@import 'sass/_variable';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #636363;
+  font-family: sans-serif;
+}
