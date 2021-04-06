@@ -11,17 +11,13 @@
 </head>
 
 <body>
-    <nav class="animals">
-        <div class="logo">
-            <img src="../assets/ic_add_pet.png" alt="">
-            <h2>sold products</h2>
-        </div>
-        <h2>logout</h2>
-    </nav>
-    <footer class="footer">
-        <h4>WeDev &copy; 2021</h4>
-    </footer>
-    <button class="gren"> adqsfsdfd</button>
+<div class="navbar">
+            <a class="active" href="#"><img src="../assets/nav_logo.png" alt="logo"></a>
+            <a href="#">Pets Shop</a>
+            <div class="navbar-right">
+              <a href="logout.php">LOGOUT</a>
+            </div>
+          </div>
 </body>
 
 </html>

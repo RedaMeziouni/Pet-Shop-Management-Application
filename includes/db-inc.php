@@ -1,15 +1,12 @@
 <?php
-// PDO Connect
-    $host = 'localhost';
-    $db = 'pet_shop';
-    $dsn = "mysql:host=$host;dbname=$db";
-    $user = 'root';
-    $sqlpass = '';
+session_start();
+$host = "localhost"; 
+$user = "root"; 
+$password = "";
+$dbname = "pets_shop";
 
-    try{
-        $pdo = new PDO($dsn, $user, $sqlpass);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-       // Echo "Successfully connected with database";
-    } catch(PDOException $e){
-        echo "connexion Failld : " . $e->getMessage();
-    }
+$con = mysqli_connect($host, $user, $password, $dbname);
+// Check connection
+if (!$con) {
+  die("Connection failed: " . mysqli_connect_error());
+}

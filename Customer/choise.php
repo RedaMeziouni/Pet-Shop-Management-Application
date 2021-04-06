@@ -12,7 +12,7 @@
 <body> 
  
 <div class="container">
-  <h2>Cards Columns</h2>
+  <h2>Choose Your Direction</h2>
   <br>
   <div class="card-columns">
     <div class="card bg-primary">

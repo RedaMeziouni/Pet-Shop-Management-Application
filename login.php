@@ -6,7 +6,7 @@
     $uname = mysqli_real_escape_string($con, $_POST['username']);
     $password = mysqli_real_escape_string($con, $_POST['password']);
 
-    if ($uname != "pets" && $password != "123456"){
+    if ($uname != "" && $password != ""){
 
         $sql_query = "SELECT count(*) as cntUser from users where username='".$uname."' and password='".$password."'";
         // echo "<pre>";
@@ -14,7 +14,7 @@
         // echo "</pre>";
         // $sql_query = "SELECT * FROM users WHERE username='".$username."' AND password='".$password."'";
         // $sql_query = "SELECT * FROM user WHERE username='pets' AND password='123456'";
-        $result = mysqli_query($con,$sql_query);
+        $result = mysqli_query($con, $sql_query);
         $row = mysqli_fetch_array($result);
 
         $count = $row['cntUser'];
@@ -37,10 +37,10 @@
   <link rel="stylesheet" href="./CSS/main.css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<title>CRUD | Login</title>
+	<title>PETS | Login</title>
 </head>
 <body>
-<div class="container">
+<div class="container_login">
     <form method="post" action="./Customer/dashboard.php">
         <div id="div_login">
             <h1>Login</h1>

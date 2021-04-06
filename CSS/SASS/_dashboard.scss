@@ -1,0 +1,102 @@
+.container_dash {
+    margin: 0;
+    background-size: cover;
+    
+}
+.navbar_1 {
+    overflow: hidden;
+    background-color:rgb(73, 25, 21);
+    height: 70px;
+    border: 2px solid black;
+}
+  
+.navbar_1 a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+.navbar_1-right {
+    float: right;
+}
+.button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 180px 8px;
+      -webkit-transition-duration: 0.2s; /* Safari 0.4*/
+      transition-duration: 0.2s;/*0.4*/
+      cursor: pointer;
+}
+.pages {
+      background-image: url('../../assets/backgorung_image.jpg');
+      background-size: cover;
+      width:100%;
+      height:600px;
+}
+  
+.style1 {
+      background-color: transparent;
+      color:white; /* black*/
+      border: 3px solid #4CAF50;
+      border-radius: 5px;
+}  
+.style1:hover {
+      background-color: #4CAF50;
+      color: white;
+}
+  
+ .style2 {
+      background-color:  transparent;
+      color: white; 
+      border-radius: 5px;
+      border: 3px solid rgba(31, 58, 147, 1);
+  }
+  
+  .style2:hover {
+      background-color:rgba(31, 58, 147, 1);
+      color: white;
+  }
+  
+  .style3 {
+      background-color:transparent; 
+      color: white; 
+      border-radius: 5px;
+      border: 3px solid #f44336;
+  }
+  
+  .style3:hover {
+      background-color: #f44336;
+      color: white;
+  }
+  
+  .style4 {
+      background-color: transparent;
+      color: white;
+      border-radius: 5px;
+      border: 3px solid rgba(249, 105, 14, 1);
+    }  
+  .style4:hover {background-color:rgba(249, 105, 14, 1);
+   color:white;
+  }
+  
+  .style5 {
+      background-color:  transparent;
+      color: white;
+      border-radius: 5px;
+      border: 3px solid #b40a70;
+  }
+  
+  .style5:hover {
+      background-color:#8d2663;
+      color: white;
+  }
