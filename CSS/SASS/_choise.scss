@@ -24,3 +24,24 @@
 #clear {
     clear: both;
 }
+
+.navbar_1 {
+    overflow: hidden;
+    background-color:rgb(73, 25, 21);
+    height: 70px;
+    border: 2px solid black;
+}
+  
+.navbar_1 a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+.navbar_1-right {
+    float: right;
+}

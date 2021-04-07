@@ -10,7 +10,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body> 
- 
+<div class="navbar_1">
+            <a class="active" href="#"><img src="../assets/nav_logo.png" alt="logo"></a>
+            <a href="#">Pets Shop</a>
+            <div class="navbar_1-right">
+              <a href="logout.php">LOGOUT</a>
+            </div>
+          </div>
 <div class="container">
   <h2>Choose Your Direction</h2>
   <br>
