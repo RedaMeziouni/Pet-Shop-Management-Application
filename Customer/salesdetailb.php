@@ -6,7 +6,6 @@ if (isset($_POST['add'])) {
     $b_id = $_POST['b_id'];
     $p_id = $_POST['p_id'];
     $date = $_POST['date'];
-    // $total = $_POST['total'];
     $qauntity = $_POST['quantity'];
 
     $sql = "INSERT INTO sales_details_birds (customer_id, birds_id, Product_id, date, quantity) VALUES (?, ?, ?, ?, ?)";
@@ -16,7 +15,6 @@ if (isset($_POST['add'])) {
         $b_id,
         $p_id,
         $date,
-        // $total,
         $qauntity,
     ]);
 }
@@ -26,7 +24,6 @@ if (isset($_POST['update'])) {
     $b_id = $_POST['b_id'];
     $p_id = $_POST['p_id'];
     $date = $_POST['date'];
-    // $total = $_POST['total'];
     $qauntity = $_POST['quantity'];
 
     $sql = "UPDATE sales_details_birds SET customer_id = ?, birds_id = ?, Product_id = ? , date = ?, quantity = ? WHERE sd_id = ?";
@@ -36,27 +33,10 @@ if (isset($_POST['update'])) {
         $b_id,
         $p_id,
         $date,
-        // $total,
         $qauntity,
         $id,
     ]);
 }
-// if (isset($_POST['Delete'])) {
-
-//     $sd_id = $_POST['sd_id'];
-//     var_dump($sd_id);
-
-//     $sql = "DELETE FROM sales_details_birds WHERE sd_id = ?";
-
-//     $stmt = $pdo->prepare($sql);
-
-//     $stmt->execute([
-//         $sd_id,
-//     ]);
-
-//     return $stmt->rowCount();
-// }
-
 if (isset($_POST['Delete'])) {
 
     $animal_id = $_POST['t1'];
@@ -84,8 +64,8 @@ if (isset($_POST['Delete'])) {
     <!-- strat navbar -->
     <nav class="products product-nav">
         <div class="z-logo">
-            <img src="../assets/ic_add_pet.png" alt="">
-            <h2>Sales Details</h2>
+            <img src="../assets/nav_logo.png" alt="Logo">
+            <h2>Sales Details Birds</h2>
         </div>
         <a href="../logout.php">logout</a>
     </nav>
@@ -93,7 +73,6 @@ if (isset($_POST['Delete'])) {
     <!-- <a>Add New Details</a> -->
     <button class="add sale-btn" id="add">Add New Details</button>
     <button class="add sale-btn" id="update">Update Details</button>
-    <!-- <button class="add">Update Details</button> -->
     <!-- ADD Nex Sales Details -->
     <section class="modal-container" id="add-modal">
         <div class="modal">
@@ -108,8 +87,6 @@ if (isset($_POST['Delete'])) {
                 <input type="number" name="p_id" required><br>
                 <label>Date :</label><br>
                 <input type="date" name="date"><br>
-                <!-- <label>Total :</label><br>
-                <input type="number" name="total"><br> -->
                 <label>Qauntity :</label><br>
                 <input type="number" name="quantity" required><br>
                 <input type="submit" name="add" value="Add" class="add sale-btn"></input>
@@ -133,8 +110,6 @@ if (isset($_POST['Delete'])) {
                 <input type="number" name="p_id" required><br>
                 <label>Date :</label><br>
                 <input type="date" name="date" required><br>
-                <!-- <label>Total :</label><br>
-                <input type="number" name="total"><br> -->
                 <label>Qauntity :</label><br>
                 <input type="number" name="quantity" required><br>
                 <input type="submit" name="update" value="Update" class="add sale-btn"></input>
@@ -151,7 +126,6 @@ if (isset($_POST['Delete'])) {
             <th class="z-th sale-th">Birds_id</th>
             <th class="z-th sale-th">Product_id</th>
             <th class="z-th sale-th">Date</th>
-            <!-- <th class="z-th sale-th">Total</th> -->
             <th class="z-th sale-th">Quantity of Pruduts</th>
         </thead>
         <?php
@@ -174,13 +148,6 @@ if (isset($_POST['Delete'])) {
 
     </table>
     <!-- end table -->
-    <!-- <div class="search" ">
-        <form action="" method=" POST">
-        <input type="text" name="sd_id" placeholder="Enter the id to delete" required class="delete-i">
-        <input type="submit" name="Delete" value="Delete" class="add sale-btn">
-        </form>
-    </div> -->
-
     <div class="search">
         <form action="" method="POST">
             <input type="text" name="t1" placeholder="Enter the id to delete" required class="delete-i">

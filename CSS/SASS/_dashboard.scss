@@ -1,10 +1,3 @@
-.whole_background {
-    // background-color: black;
-    background-image: url('../../assets/backgorund_image.png');
-    background-size: cover;
-      width:100%;
-      height:865px;
-}
 .container_dash {
     margin: 0;
     background-size: cover;
@@ -31,7 +24,7 @@
     float: right;
 }
 .button {
-      background-color: #4CAF50; 
+      background-color: #4CAF50; /* Green */
       border: none;
       color: white;
       padding: 16px 32px;
@@ -40,21 +33,20 @@
       display: inline-block;
       font-size: 16px;
       margin: 180px 8px;
-      -webkit-transition-duration: 0.2s; 
-      transition-duration: 0.2s;
+      -webkit-transition-duration: 0.2s; /* Safari 0.4*/
+      transition-duration: 0.2s;/*0.4*/
       cursor: pointer;
 }
-// .whole_background {
-//     // background-color: black;
-//     background-image: url('../../assets/backgorund_image.png');
-//     background-size: cover;
-//       width:100%;
-//       height:865px;
-// }
+.pages {
+      background-image: url('../../assets/backgorung_image.jpg');
+      background-size: cover;
+      width:100%;
+      height:600px;
+}
   
 .style1 {
       background-color: transparent;
-      color:white;
+      color:white; /* black*/
       border: 3px solid #4CAF50;
       border-radius: 5px;
 }  

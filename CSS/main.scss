@@ -1,19 +1,12 @@
 @import 'sass/animals';
 @import 'sass/animalsform';
-@import 'sass/birds';
+@import 'sass/choise';
 @import 'sass/customers';
 @import 'sass/login';
-@import 'sass/petsprudcts';
-@import 'sass/petsshop';
-@import 'sass/salesdetail';
-@import 'sass/soldpets';
-@import 'sass/soldproducts';
-<<<<<<< HEAD
-@import 'sass/variable';
 @import 'sass/dashboard';
-@import 'sass/choise';
-=======
-@import 'sass/_variable';
+@import 'sass/petsprudcts';
+@import 'sass/salesdetail';
+
 * {
   margin: 0;
   padding: 0;
@@ -23,4 +16,3 @@ body {
   background-color: #636363;
   font-family: sans-serif;
 }
->>>>>>> 36cf07fd8f333c42f138931b92b6c57cf747d215

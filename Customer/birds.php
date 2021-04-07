@@ -62,7 +62,7 @@ if (isset($_POST['Delete'])) {
     <!-- strat navbar -->
     <nav class="products birds-nav">
         <div class="z-logo">
-            <img src="../assets/ic_add_pet.png" alt="">
+            <a class="active" href="dashboard.php"><img src="../assets/nav_logo.png"></a>
             <h2>Sales Details</h2>
         </div>
         <h2>logout</h2>

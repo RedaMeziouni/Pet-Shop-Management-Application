@@ -1,6 +1,12 @@
-var open = document.getElementById('open');
-var modal = document.getElementById('modal');
+var add = document.getElementById('add');
+var update = document.getElementById('update');
+var updatemodal = document.getElementById('update-modal');
+var addmodal = document.getElementById('add-modal');
 
-open.addEventListener("click", function () {
-    modal.classList.add('show');
+add.addEventListener("click", function () {
+    addmodal.classList.add('show');
 });
+update.addEventListener("click", function () {
+    updatemodal.classList.add('show');
+});
+

@@ -66,8 +66,8 @@ if (isset($_POST['Delete'])) {
     <!-- strat navbar -->
     <nav class="products product-nav">
         <div class="z-logo">
-            <img src="../assets/ic_add_pet.png" alt="">
-            <h2>Sales Details</h2>
+            <img src="../assets/nav_logo.png" alt="">
+            <h2>Sales Details animals</h2>
         </div>
         <a href="../logout.php">logout</a>
     </nav>
@@ -75,7 +75,6 @@ if (isset($_POST['Delete'])) {
     <!-- <a>Add New Details</a> -->
     <button class="add sale-btn" id="add">Add New Details</button>
     <button class="add sale-btn" id="update">Update Details</button>
-    <!-- <button class="add">Update Details</button> -->
     <!-- ADD Nex Sales Details -->
     <section class="modal-container" id="add-modal">
         <div class="modal">
@@ -90,8 +89,6 @@ if (isset($_POST['Delete'])) {
                 <input type="number" name="p_id" required><br>
                 <label>Date :</label><br>
                 <input type="date" name="date"><br>
-                <!-- <label>Total :</label><br>
-                <input type="number" name="total"><br> -->
                 <label>Qauntity :</label><br>
                 <input type="number" name="quantity" required><br>
                 <input type="submit" name="add" value="Add" class="add sale-btn"></input>
@@ -115,8 +112,6 @@ if (isset($_POST['Delete'])) {
                 <input type="number" name="p_id" required><br>
                 <label>Date :</label><br>
                 <input type="date" name="date" required><br>
-                <!-- <label>Total :</label><br>
-                <input type="number" name="total"><br> -->
                 <label>Qauntity :</label><br>
                 <input type="number" name="quantity" required><br>
                 <input type="submit" name="update" value="Update" class="add sale-btn"></input>

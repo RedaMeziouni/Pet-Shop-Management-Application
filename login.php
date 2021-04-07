@@ -13,28 +13,44 @@ if (isset($_POST['login'])) {
     if ($stmt->rowCount()) {
         header('location: Customer/dashboard.php');
     } else {
-        echo 'username or password wrong';
+        echo "<script>
+        alert('username or password wrong');
+    </script>";
     }
 }
-
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html class="fix1">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>PETS | Login</title>
 </head>
+<script>
+    alert('username or password wrong');
+</script>
 
 <body>
-    <form action="" method="POST">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <input type="submit" value="lmdsj" name="login">
-    </form>
+    <div class="container_login">
+        <form method="post" action="login.php">
+            <div id="div_login">
+                <h1>Login</h1>
+                <div>
+                    <input type="text" class="textbox" name="username" placeholder="Username" required autocomplete="off">
+                </div>
+                <div>
+                    <input type="password" class="textbox" name="password" placeholder="Password" required autocomplete="off">
+                </div>
+                <div>
+                    <input type="submit" value="Submit" name="login">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
