@@ -8,6 +8,19 @@
 @import 'sass/salesdetail';
 @import 'sass/soldpets';
 @import 'sass/soldproducts';
+<<<<<<< HEAD
 @import 'sass/variable';
 @import 'sass/dashboard';
 @import 'sass/choise';
+=======
+@import 'sass/_variable';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #636363;
+  font-family: sans-serif;
+}
+>>>>>>> 36cf07fd8f333c42f138931b92b6c57cf747d215
